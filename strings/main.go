@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"strings"
 	"unicode/utf8"
 )
 
@@ -25,4 +26,14 @@ func main() {
 	a, b := 1, "1"
 	msg := fmt.Sprintf("a=%#v, b=%#v", a, b)
 	fmt.Println(msg)
+
+	// Strings have no methods (e.g. s.Upper()), see the "strings" built-in package
+	x := "jason"
+	fmt.Println("x:", x)
+	y := strings.ToUpper(x)
+	fmt.Println("y:", y)
+
+	// Title method in the strings package handles capitalization
+	z := strings.Title(x)
+	fmt.Println("z:", z)
 }
