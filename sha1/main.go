@@ -29,6 +29,7 @@ func fileSHA1(fileName string) (string, error) {
 	if err != nil {
 		return "", err
 	}
+	
 	w := sha1.New()
 	if _, err := io.Copy(w, r); err != nil {
 		return "", err

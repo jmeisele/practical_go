@@ -1,2 +1,3 @@
 # practical_go
-Practical Go Lang
+
+Repo for Practical Go Lang training
